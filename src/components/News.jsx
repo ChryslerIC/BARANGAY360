@@ -60,7 +60,7 @@ const News = () => {
                     >
                         ←
                     </div>
-                    <img src="/icons/news.svg" alt="News" />git init
+                    <img src="/icons/news.svg" alt="News" />
 
                     <div>News and Announcements</div>
                 </div>

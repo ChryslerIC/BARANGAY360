@@ -1766,7 +1766,7 @@ select {
     z-index: 5;
 }
 
-/* NewsAll*/
+/* NewsAll */
 
 .newsall__container {
     background: linear-gradient(45deg, #f5fff9, #ebfbee);
@@ -1866,18 +1866,31 @@ select {
     top: 0;
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
     z-index: 5;
+    position: relative; /* Required for hover highlight */
 }
 
 .newsall__topnav-title {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     padding-left: 40px;
     height: 100%;
-    font-size: 20px;
-    font-weight: 600;
-    color: #004225;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
 }
+
+.newsall__hover-highlight {
+    background: #50af36;
+    border-radius: 20px;
+    width: 320px;
+    height: 36px;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+    z-index: 10; /* ← changed from 1 to 10 */
+}
+
 
 /* Content layout */
 .newsall__content {
@@ -1904,7 +1917,8 @@ select {
 
 .newsall__main-img {
     width: 100%;
-    height: auto;
+    height: 350px;
+    background-color: #d9d9d9;
     border-radius: 8px;
     margin-bottom: 16px;
 }
@@ -1969,13 +1983,8 @@ select {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-.newsall__main-img {
-    height: 350px;
-    background-color: #d9d9d9;
-    border-radius: 8px;
-    margin-bottom: 16px;
-}
 
+/* Back button */
 .newsall__back-icon {
     font-size: 18px;
     font-weight: 600;
@@ -1987,6 +1996,362 @@ select {
 .newsall__back-icon:hover {
     transform: scale(1.1);
 }
+.newsall__topbar {
+    background: #ffffff;
+    width: calc(100vw - 112px);
+    height: 60px;
+    position: absolute;
+    left: 112px;
+    top: 0;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    position: relative;
+}
+
+.newsall__hover-highlight {
+    background: #50af36;
+    border-radius: 20px;
+    width: 320px;
+    height: 36px;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+    z-index: 10;
+}
+
+.newsall__topnav-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 40px;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #004225;
+    z-index: 11;          /* ← makes it sit above the green bar */
+    position: relative;   /* ← enables z-index to work */
+}
+/* Top Navigation Bar */
+.background {
+    background: #ffffff;
+    width: calc(100vw - 112px);
+    height: 60px;
+    position: absolute;
+    left: 112px;
+    top: 0;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+.newsall__hover-highlight {
+    background: #50af36;
+    border-radius: 20px;
+    width: 320px;
+    height: 36px;
+    position: absolute;
+    top: 12px;
+    z-index: 6;
+}
+
+/* Topbar text & layout */
+.shortcuts {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    align-items: center;
+    position: absolute;
+    left: 180px;
+    top: 14px;
+    z-index: 10;
+}
+
+.news-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    padding: 6px 10px;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.news-btn:hover {
+    background-color: rgba(0, 138, 61, 0.1);
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.news-btn.active {
+    background-color: rgba(0, 138, 61, 0.15);
+    font-weight: 600;
+}
+
+/* Sidebar hover effects (matching News.jsx) */
+.newsall__profile-btn:hover,
+.newsall__file-req-icon:hover,
+.newsall__news-icon:hover,
+.newsall__transp-icon:hover,
+.newsall__chatbot-icon:hover,
+.newsall__logout-btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.newsall__profile-btn:hover,
+.newsall__file-req-icon:hover,
+.newsall__news-icon:hover,
+.newsall__transp-icon:hover,
+.newsall__chatbot-icon:hover {
+    background-color: #00994a;
+}
+
+.newsall__logout-btn:hover {
+    background-color: #00532a;
+}
+
+/* Optional: active icon effect */
+.newsall__profile-btn.active,
+.newsall__file-req-icon.active,
+.newsall__news-icon.active,
+.newsall__transp-icon.active,
+.newsall__chatbot-icon.active,
+.newsall__logout-btn.active {
+    background-color: #004d2d;
+    box-shadow: 0 0 12px rgba(0, 138, 61, 0.5);
+    transform: translateY(-1px);
+}
+.newsall__profile-btn,
+.newsall__file-req-icon,
+.newsall__news-icon,
+.newsall__transp-icon,
+.newsall__chatbot-icon,
+.newsall__logout-btn {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0);
+}
+
+.news-btn {
+    transition: background 0.3s, transform 0.2s ease-in-out;
+    transform: translateY(0);
+}
+.newsall__more-news {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 40px solid #00703c;
+}
+
+.newsall__more-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #004225;
+    margin-bottom: 12px;
+}
 
 
+/* news Detail*/
 
+/* NewsDetail */
+
+.newsdetail__container {
+    background: linear-gradient(45deg, #f5fff9, #ebfbee);
+    background-size: 400% 400%;
+    animation: pulseGradient 15s ease infinite;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Sidebar background */
+.newsdetail__sidebar {
+    width: 112px;
+    height: 100vh;
+    background-color: #004225;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* App icon */
+.newsdetail__app-icon {
+    background: #50af36;
+    border-radius: 15px;
+    padding: 5px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.newsdetail__logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Sidebar buttons */
+.newsdetail__profile-btn,
+.newsdetail__file-req-icon,
+.newsdetail__news-icon,
+.newsdetail__transp-icon,
+.newsdetail__chatbot-icon,
+.newsdetail__logout-btn {
+    background: #008a3d;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Sidebar icon positioning */
+.newsdetail__profile-btn { top: 120px; left: 26px; }
+.newsdetail__file-req-icon { top: 200px; left: 26px; }
+.newsdetail__news-icon { top: 280px; left: 26px; }
+.newsdetail__transp-icon { top: 360px; left: 26px; }
+.newsdetail__chatbot-icon { top: 580px; left: 26px; }
+.newsdetail__logout-btn {
+    background: #003718;
+    top: 650px;
+    left: 26px;
+}
+
+/* Sidebar icon images */
+.newsdetail__profile-btn img,
+.newsdetail__file-req-icon img,
+.newsdetail__news-icon img,
+.newsdetail__transp-icon img,
+.newsdetail__chatbot-icon img,
+.newsdetail__logout-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Hover Effect for Sidebar */
+.newsdetail__profile-btn:hover,
+.newsdetail__file-req-icon:hover,
+.newsdetail__news-icon:hover,
+.newsdetail__transp-icon:hover,
+.newsdetail__chatbot-icon:hover,
+.newsdetail__logout-btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/* Tint color on hover */
+.newsdetail__profile-btn:hover,
+.newsdetail__file-req-icon:hover,
+.newsdetail__news-icon:hover,
+.newsdetail__transp-icon:hover,
+.newsdetail__chatbot-icon:hover {
+    background-color: #00994a;
+}
+
+.newsdetail__logout-btn:hover {
+    background-color: #00532a;
+}
+
+/* Divider between Chatbot and Logout */
+.newsdetail__divider-2 {
+    width: 80px;
+    height: 0;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    left: 16px;
+    top: 580px;
+}
+
+/* Top Navigation */
+.newsdetail__background {
+    background: #ffffff;
+    width: calc(100vw - 112px);
+    height: 60px;
+    position: absolute;
+    left: 112px;
+    top: 0;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+}
+
+.newsdetail__hover-highlight {
+    background: #50af36;
+    border-radius: 20px;
+    width: 320px;
+    height: 36px;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+    z-index: 1;
+}
+
+.newsdetail__shortcuts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 180px;
+    top: 14px;
+}
+
+.newsdetail__news-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    padding: 6px 10px;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.newsdetail__news-btn:hover {
+    background-color: rgba(0, 138, 61, 0.1);
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+.newsdetail__content {
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    right: 40px;
+    bottom: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.newsdetail__main-news {
+    flex: 2;
+}
+
+.newsdetail__section-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #014421;
+}
+
+.newsdetail__main-img {
+    width: 100%;
+    height: 350px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.newsdetail__article {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
