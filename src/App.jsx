@@ -8,7 +8,8 @@ import Success from "./components/Success.jsx";
 import Creatingprofile from "./components/Creatingprofile.jsx";
 import IdentificationVerification from "./components/IdentificationVerification.jsx";
 import Home from "./components/home.jsx";
-import News from "./components/News.jsx"; // ✅ Import the actual News component
+import News from "./components/News.jsx";
+import Newsall from "./components/Newsall.jsx"; // ✅ Add this line
 import { AuthProvider } from "./auth/authContext.jsx";
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Login />} />
                     <Route path="/home" element={<Home />} />
-                    <Route path="/news" element={<News />} /> {/* ✅ Corrected */}
+                    <Route path="/news" element={<News />} />
+                    <Route path="/newsall" element={<Newsall />} />
                     <Route path="/signup" element={<Signup />} />
                     <Route path="/forgot-password" element={<ForgotPassword />} />
                     <Route path="/verification" element={<VerificationCode />} />
@@ -33,3 +35,4 @@ function App() {
 }
 
 export default App;
+

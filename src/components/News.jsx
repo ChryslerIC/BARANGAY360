@@ -50,7 +50,7 @@ const News = () => {
 
             {/* Top Nav Bar */}
             <div className="background"></div>
-            <div className="hover-choices" style={{ left: 160 }}></div>
+            <div className="news-hover-choices" style={{ left: 160 }}></div>
             <div className="shortcuts">
                 <div className="news-btn">
                     <div
@@ -60,7 +60,8 @@ const News = () => {
                     >
                         ←
                     </div>
-                    <img src="/icons/news.svg" alt="News" />
+                    <img src="/icons/news.svg" alt="News" />git init
+
                     <div>News and Announcements</div>
                 </div>
             </div>
@@ -87,9 +88,10 @@ const News = () => {
                 ))}
             </div>
 
+            {/* ✅ View All button now redirects */}
             <button
                 className="news-view-more-btn"
-                onClick={() => alert("Redirect to full archive...")}
+                onClick={() => navigate("/newsall")}
             >
                 View All
             </button>
