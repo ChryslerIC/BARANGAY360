@@ -1,0 +1,416 @@
+.transparency-dashboard,
+.transparency-dashboard * {
+  box-sizing: border-box;
+}
+.transparency-dashboard {
+  background: var(--white, #ffffff);
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+.green-rect {
+  width: 112px;
+  height: 1080px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.chatbot-icon {
+  background: var(--008a3d, #008a3d);
+  border-radius: 20px;
+  padding: 9px 10px 9px 10px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 16px;
+  top: 867px;
+}
+.frame-5 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 14px;
+  top: 13px;
+  overflow: visible;
+}
+.log-out-btn {
+  background: var(--003718, #003718);
+  border-radius: 20px;
+  padding: 7px 10px 7px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 16px;
+  top: 989px;
+}
+.feather-icons-log-out {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: visible;
+}
+.divide-1 {
+  width: 93px;
+  height: 0px;
+  position: absolute;
+  left: 10px;
+  top: 129px;
+  transform: translate(-0.75px, -0.75px);
+  overflow: visible;
+}
+.divide-2 {
+  width: 93px;
+  height: 0px;
+  position: absolute;
+  left: 10px;
+  top: 963px;
+  transform: translate(-0.75px, -0.75px);
+  overflow: visible;
+}
+.file-req-icon {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 6px;
+  top: 241px;
+}
+.frame-4 {
+  background: var(--008a3d, #008a3d);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+.feather-icons-file-text {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: visible;
+}
+.news-icon {
+  background: var(--008a3d, #008a3d);
+  border-radius: 20px;
+  padding: 9px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 15px;
+  top: 346px;
+}
+.phosphor-icons-newspaper {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  overflow: visible;
+}
+.transp-icon {
+  background: var(--50af36, #50af36);
+  border-radius: 20px;
+  padding: 9px 10px 9px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 16px;
+  top: 443px;
+}
+.phosphor-icons-chart-line {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: visible;
+}
+.profile-btn {
+  background: var(--008a3d, #008a3d);
+  border-radius: 20px;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 17px;
+  top: 160px;
+}
+.phosphor-icons-user-circle {
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  position: relative;
+  overflow: visible;
+}
+.app-icon {
+  background: var(--50af36, #50af36);
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 10px;
+  top: 19px;
+}
+.brgy-360-4 {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.background {
+  background: var(--white, #ffffff);
+  width: 1808px;
+  height: 72px;
+  position: absolute;
+  left: 112px;
+  top: -1px;
+  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.3);
+}
+.back {
+  width: 63px;
+  height: 63px;
+  position: absolute;
+  left: 119px;
+  top: 8px;
+  overflow: visible;
+}
+.hover-green {
+  background: var(--50af36, #50af36);
+  border-radius: 30px;
+  padding: 3px 16px 3px 16px;
+  width: 304px;
+  height: 40px;
+  position: absolute;
+  left: 188px;
+  top: 18px;
+}
+.frame-35 {
+  display: flex;
+  flex-direction: row;
+  gap: 77px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 208px;
+  top: 21px;
+}
+.transparency-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 278px;
+  position: relative;
+}
+.phosphor-icons-chart-line2 {
+  flex-shrink: 0;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  overflow: visible;
+}
+.transparency-dashboard2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+  position: relative;
+}
+.budget {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.phosphor-icons-money {
+  flex-shrink: 0;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  overflow: visible;
+}
+.budget-overview {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+  position: relative;
+}
+.project {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.phosphor-icons-folder-notch-open {
+  flex-shrink: 0;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  overflow: visible;
+}
+.project-updates {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+  position: relative;
+}
+.achievements {
+  flex-shrink: 0;
+  width: 371px;
+  height: 33px;
+  position: relative;
+}
+.frame-33 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 371px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.phosphor-icons-medal {
+  flex-shrink: 0;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  overflow: visible;
+}
+.accomplishments-and-achievements {
+  color: #000000;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 500;
+  position: relative;
+}
+.barangay-sta-rita {
+  color: var(--006533, #006533);
+  text-align: left;
+  font-family: "RobotoFlex-ExtraBold", sans-serif;
+  font-size: 70px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  position: absolute;
+  left: 347px;
+  top: 296px;
+  width: 726px;
+  height: 51px;
+}
+.barangay-sta-rita-one-of-olongapo-city-s-largest-barangays-is-committed-to-transparency-accountability-and-community-development-through-open-governance-we-provide-residents-with-access-to-essential-information-on-projects-budget-allocations-and-accomplishments-stay-informed-and-engaged-as-we-work-together-for-a-safer-and-more-progressive-community {
+  color: #000000;
+  text-align: justified;
+  font-family: "RobotoFlex-Light", sans-serif;
+  font-size: 40px;
+  line-height: 140%;
+  font-weight: 300;
+  position: absolute;
+  left: 347px;
+  top: 373px;
+  width: 1313px;
+}
+.view-more {
+  background: var(--00703c, #00703c);
+  border-radius: 10px;
+  padding: 19px 46px 19px 46px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 74px;
+  position: absolute;
+  left: 1450px;
+  top: 688px;
+}
+.view-more2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 25px;
+  line-height: 140%;
+  font-weight: 400;
+  position: relative;
+}
+.user {
+  background: var(--29703c, #29703c);
+  border-radius: 15px;
+  padding: 4px 10px 4px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1635px;
+  top: 20px;
+}
+.user2 {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  object-fit: cover;
+}
+.vincent-s-batallones {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font-family: "Roboto-SemiBold", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+}
