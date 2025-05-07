@@ -29,8 +29,12 @@ const Home = () => {
                 <img src="/icons/news.svg" className="phosphor-icons-newspaper" alt="News" />
             </div>
 
+<<<<<<< HEAD
             {/* Transparency button linked */}
             <div className="transp-icon" onClick={() => navigate("/transparencydashboard")} style={{ cursor: "pointer" }}>
+=======
+            <div className="transp-icon">
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
                 <img src="/icons/chart.svg" className="phosphor-icons-chart-line" alt="Transparency" />
             </div>
 
@@ -69,8 +73,12 @@ const Home = () => {
                     <div className="news-and-announcements">News and Announcements</div>
                 </div>
 
+<<<<<<< HEAD
                 {/* Link Transparency button to Transparency Dashboard */}
                 <div className="transparency-btn" onClick={() => navigate("/transparencydashboard")} style={{ cursor: "pointer" }}>
+=======
+                <div className="transparency-btn">
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
                     <img src="/icons/chart.svg" className="phosphor-icons-chart-line2" alt="Transparency" />
                     <div className="transparency-dashboard">Transparency Dashboard</div>
                 </div>

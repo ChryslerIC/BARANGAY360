@@ -1,6 +1,10 @@
 @import url('vars.css');
 
+<<<<<<< HEAD
 * {
+=======
+*{
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -12,7 +16,10 @@ body {
     width: 100%;
     height: 100vh;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 /* LOGIN PAGE STYLES */
 .login-page {
     width: 100vw;
@@ -24,6 +31,7 @@ body {
     background: white;
     position: relative;
     overflow: hidden;
+<<<<<<< HEAD
     animation: pulseGradient 10s ease-in-out infinite;
 }
 
@@ -43,6 +51,20 @@ body {
     left: 0;
     z-index: 0;
     animation: pulseGradient 10s ease-in-out infinite;
+=======
+}
+
+.login-background-shape {
+    position: absolute;
+    width: 2050px;
+    height: 1500px;
+    background: linear-gradient(180deg, #008a3d 40%, #146c43 70%);
+    top: -200px;
+    right: -1050px;
+    transform: rotate(45deg);
+    border-radius: 300px;
+    z-index: 0;
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 }
 
 .login-card {
@@ -149,6 +171,93 @@ body {
 }
 
 
+<<<<<<< HEAD
+=======
+/* ✅ MODALS */
+.error-modal-overlay,
+.success-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.error-modal,
+.success-modal {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.error-header {
+    height: 40px;
+    background: #8b0000;
+}
+
+.success-header {
+    height: 40px;
+    background: #146c43;
+}
+
+.error-body,
+.success-body {
+    padding: 1.5rem 1rem;
+}
+
+.error-icon,
+.success-icon {
+    font-size: 42px;
+    margin-bottom: 0.5rem;
+}
+
+.error-icon {
+    color: #8b0000;
+}
+
+.success-icon {
+    color: #146c43;
+}
+
+.error-message,
+.success-message {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #8b0000;
+}
+
+.success-message {
+    color: #146c43;
+}
+
+.error-subtext {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.error-close-btn {
+    padding: 8px 16px;
+    background: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 
 /* FORGOT PASSWORD CSS*/
 
@@ -1430,11 +1539,14 @@ select {
     100% { background-position: 0% 50%; }
 }
 
+<<<<<<< HEAD
 
 /*news*/
 /* news-dashboard-container */
 /*news*/
 /* news-dashboard-container */
+=======
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 .news-dashboard-container {
     background: linear-gradient(45deg, #f5fff9, #ebfbee);
     background-size: 400% 400%;
@@ -1492,8 +1604,11 @@ select {
     justify-content: center;
     align-items: center;
     position: absolute;
+<<<<<<< HEAD
     transition: all 0.2s ease-in-out;
     transform: translateY(0);
+=======
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 }
 
 .profile-btn { top: 120px; left: 26px; }
@@ -1517,6 +1632,7 @@ select {
     height: 30px;
 }
 
+<<<<<<< HEAD
 /* Active state for news icon */
 .news-icon.active {
     background-color: #50af36; /* Highlight color as requested */
@@ -1524,6 +1640,8 @@ select {
     transform: translateY(-1px);
 }
 
+=======
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 .divide-1,
 .divide-2 {
     width: 80px;
@@ -1547,6 +1665,7 @@ select {
     z-index: 5;
 }
 
+<<<<<<< HEAD
 .news-hover-choices {
     background: #50af36;
     border-radius: 20px;
@@ -1556,6 +1675,17 @@ select {
     left: 200px;
     top: 12px;
     z-index: 5;
+=======
+.hover-choices {
+    background: #50af36;
+    border-radius: 20px;
+    width: 130px;
+    height: 36px;
+    position: absolute;
+    left: 160px;
+    top: 14px;
+    z-index: 6;
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 }
 
 .shortcuts {
@@ -1693,7 +1823,20 @@ select {
 .back-icon:hover {
     transform: scale(1.1);
 }
+<<<<<<< HEAD
 
+=======
+.news-hover-choices {
+    background: #50af36;
+    border-radius: 20px;
+    width: 320px;
+    height: 36px;
+    position: absolute;
+    left:200px;
+    top: 12px;
+    z-index: 5;
+}
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 
 /* NewsAll */
 
@@ -2086,6 +2229,7 @@ select {
 
 /* NewsDetail */
 
+<<<<<<< HEAD
 /* newsall__container */
 .newsall__container {
     background: linear-gradient(45deg, #f5fff9, #ebfbee);
@@ -2364,6 +2508,8 @@ select {
 
 /* NewsDetail */
 
+=======
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 .newsdetail__container {
     background: linear-gradient(45deg, #f5fff9, #ebfbee);
     background-size: 400% 400%;

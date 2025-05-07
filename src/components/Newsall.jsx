@@ -1,13 +1,20 @@
 import React from "react";
+<<<<<<< HEAD
 import { useNavigate, useLocation } from "react-router-dom";
+=======
+import { useNavigate } from "react-router-dom";
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 import logo from "../assets/brgy360logo.png";
 
 const Newsall = () => {
     const navigate = useNavigate();
+<<<<<<< HEAD
     const location = useLocation();
 
     // Check if the current route is news-related
     const isNewsActive = location.pathname === "/newsall";
+=======
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 
     const handleSeeMore = (id) => {
         navigate(`/newsdetail/${id}`);  // Navigate to the NewsDetail page with the news ID
@@ -28,7 +35,11 @@ const Newsall = () => {
             <div className="newsall__file-req-icon">
                 <img src="/icons/file-text.svg" alt="File Request" />
             </div>
+<<<<<<< HEAD
             <div className={`newsall__news-icon ${isNewsActive ? "active" : ""}`}>
+=======
+            <div className="newsall__news-icon">
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
                 <img src="/icons/news.svg" alt="News" />
             </div>
             <div className="newsall__transp-icon">
@@ -44,7 +55,11 @@ const Newsall = () => {
             <img className="newsall__divider-1" src="/icons/divide-1.svg" alt="" />
             <img className="newsall__divider-2" src="/icons/divide-2.svg" alt="" />
 
+<<<<<<< HEAD
             {/* Top Navigation */}
+=======
+            {/* Top Navigation (replica of News.jsx) */}
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
             <div className="background"></div>
             <div className="newsall__hover-highlight" style={{ left: 160 }}></div>
             <div className="shortcuts">

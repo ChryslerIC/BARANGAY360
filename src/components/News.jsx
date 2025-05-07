@@ -1,10 +1,17 @@
 import React from "react";
+<<<<<<< HEAD
 import { useNavigate, useLocation } from "react-router-dom";
+=======
+import { useNavigate } from "react-router-dom";
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 import logo from "../assets/brgy360logo.png";
 
 const News = () => {
     const navigate = useNavigate();
+<<<<<<< HEAD
     const location = useLocation();
+=======
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
 
     const newsItems = Array(3).fill(null).map(() => ({
         title: "Placeholder Title",
@@ -20,8 +27,11 @@ const News = () => {
         }),
     }));
 
+<<<<<<< HEAD
     const isNewsActive = location.pathname === "/news" || location.pathname === "/newsall" || location.pathname.startsWith("/newsdetail");
 
+=======
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
     return (
         <div className="news-dashboard-container">
             {/* Sidebar */}
@@ -36,7 +46,11 @@ const News = () => {
             <div className="file-req-icon">
                 <img src="/icons/file-text.svg" alt="File Request" />
             </div>
+<<<<<<< HEAD
             <div className={`news-icon ${isNewsActive ? "active" : ""}`}>
+=======
+            <div className="news-icon">
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
                 <img src="/icons/news.svg" alt="News" />
             </div>
             <div className="transp-icon">
@@ -64,6 +78,10 @@ const News = () => {
                         ←
                     </div>
                     <img src="/icons/news.svg" alt="News" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> cbc92bf1e55d2977ed23150832cd6e68ee6d0da0
                     <div>News and Announcements</div>
                 </div>
             </div>
